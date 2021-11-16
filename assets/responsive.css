@@ -1,0 +1,57 @@
+/* ipad pro */
+@media (max-width : 1366px) and (min-width:1025px) {
+    .head__user-video i,
+    .head__user-app i,
+    .head__user-info i {
+        margin: 0 5px;
+    }
+    .product__cart {
+        max-width: 33.3333%;
+        flex: 0 0 33.3333%;
+    }
+}
+
+@media (max-width : 998px) and (min-width:681px) {
+    .head__container{
+        justify-content: space-around;
+    }
+    .head__user-video i,
+    .head__user-app i,
+    .head__user-info i {
+        font-size: 1.1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .body__category{
+        display: none;
+    }
+}
+/* mobile */
+@media (max-width : 680px) {
+    .head__search{
+        max-width: 16.6667%;
+        flex: 0 0 16.6667%;
+        margin-left: 60px;
+    }
+    .head__search-input
+    {
+        display: none;
+    }
+    .head__search-icon {
+        border: none;
+    }
+    .head__logo{
+        max-width: 33.3333%;
+        flex: 0 0 33.3333%;
+    }
+
+    .head__user{
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+    .body__category{
+        display: none;
+    }
+}
