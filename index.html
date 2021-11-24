@@ -1,268 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/icon-ytb.png" type="image/x-icon" />
     <title>youtube</title>
-    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/headStyle.css">
-    <link rel="stylesheet" href="./assets/bodyStyle.css">
-    <link rel="stylesheet" href="./assets/responsive.css">
-</head>
-<body id="body">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/headStyle.css" />
+    <link rel="stylesheet" href="./css/bodyStyle.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body id="body">
     <div class="container">
-        <head>
-            <div class="head__container">
-                <div class="head__logo">
-                    <div class="head__logo-bar">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                    <div class="head__logo-icon">
-                        <a href="#">
-                            <i class="fab fa-youtube"></i>
-                            <span class="head__logo-text">YouTube</span>
-                            <span class="head__logo-text-vn">VN</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="head__search">
-                    <div class="head__search-input">
-                        <input type="text" name="head-search" placeholder="Tìm Kiếm">
-                        <i class="fas fa-keyboard"></i>
-                    </div>
-                    <div class="head__search-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <div class="head__search-micro">
-                        <i class="fas fa-microphone"></i>
-                    </div>
-
-                </div>
-                <div class="head__user">
-                    <div class="head__user-video">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <div class="head__user-app">
-                        <i class="far fa-bookmark"></i>
-                    </div>
-                    <div class="head__user-info">
-                        <i class="far fa-bell"></i>
-                    </div>
-                    <div class="head__user-account">
-                        <i class="far fa-smile"></i>
-                    </div>
-                </div>
+      <header>
+        <div class="head__container">
+          <div class="head__logo">
+            <div class="head__logo-bar">
+              <i class="fas fa-bars"></i>
             </div>
-        </head>
-        <body>
-            <div class="body__container">
-                <div class="body__category">
-                    <div class="category__container">
-                        <div class="category__homePage">
-                            <ul class="category__list">
-                                <li class="category__list-item active">
-                                    <i class="fas fa-home"></i>
-                                    <span>Trang chu</span>
-                                </li>
-                                <li class="category__list-item">
-                                    <i class="far fa-compass"></i>
-                                    <span>Kham Pha</span>
-                                </li>
-                                <li class="category__list-item">
-                                    <i class="fas fa-book-open"></i>
-                                    <span>Kenh Dang Ki</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="category__video">
-                            <ul class="category__list">
-                                <li class="category__list-item">
-                                    <i class="fas fa-book"></i>
-                                    <span>Thu vien</span>
-                                </li>
-                                <li class="category__list-item">
-                                    <i class="fas fa-history"></i>
-                                    <span>Video đã xem</span>
-                                </li>
-                                <li class="category__list-item">
-                                    <i class="far fa-clock"></i>
-                                    <span>Xem sau</span>
-                                </li>
-                                <li class="category__list-item">
-                                    <i class="far fa-thumbs-up"></i>
-                                    <span>video đã thích</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="body__product">
-                    <div class="body__product-container">
-                        <div class="product__hint">
-                            <ul class="product__hint-list">
-                                <li class="product__hint-list-item active">Tất cả</li>
-                                <li class="product__hint-list-item">danh sách kết hợp</li>
-                                <li class="product__hint-list-item">Âm nhạc</li>
-                                <li class="product__hint-list-item">Giải trí</li>
-                                <li class="product__hint-list-item">Trò chơi</li>
-                            </ul>
-                        </div>
-
-                        <div class="product__list">
-                            <div class="product__cart">
-                                <div class="product__cart-image" 
-                                style="background-image: url(https://i.ytimg.com/vi/-61ZCCCwDU4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDX2FTb2hY341IgBUISTiqI1yS89g);
-                                background-repeat: no-repeat;
-                                background-size: cover;">
-                                     <span>03:23</span>
-                                </div>
-                                <div class="product__cart-content">
-                                    <div class="product__cart-content-userImage">
-                                        <img src="https://yt3.ggpht.com/ytc/AKedOLSOyvcUtaZ8Nh5VpfzmzBOXpXjx80P4ZkfFemICFQ=s68-c-k-c0x00ffffff-no-rj"
-                                         alt="">
-                                    </div>
-                                    <div class="product__cart-content-title">
-                                        <div class="product__cart-content-title-icon">
-                                            <h3>THIÊN ĐÀNG | SOÁI NHI ft. GIN (Cover)</h3>
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </div>                                                                                    
-                                        <div class="product__cart-blogName">
-                                            <span>Soái Nhi Official </span>
-                                        </div>
-                                        <div class="product__cart-view">
-                                            <span>1,8 Tr lượt xem . </span>
-                                            <span>1 ngày trước</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product__cart">
-                                <div class="product__cart-image" 
-                                style="background-image: url(https://i.ytimg.com/vi/c-mILo5qZjc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAYaq8UV1vZHg5Fhv3Q3gGqsQhHvQ);
-                                background-repeat: no-repeat;
-                                background-size: cover;">
-                                    
-                                     <span>21:23</span>
-                                </div>
-                                <div class="product__cart-content">
-                                    <div class="product__cart-content-userImage">
-                                        <img src="https://yt3.ggpht.com/XkcR_0_hNSF1QSORprbltUR23RyOSfnCUBYo0BEUwvAZrV2UVuY3ltSa5BukufP4oQEQ5cKN=s88-c-k-c0x00ffffff-no-rj"
-                                         alt="">
-                                    </div>
-                                    <div class="product__cart-content-title">
-                                        <div class="product__cart-content-title-icon">
-                                            <h3>SpaceSpeakers' Chill Hits | SpaceSpeakers</h3>
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </div>                                                                                    
-                                        <div class="product__cart-blogName">
-                                            <span>SpaceSpeakers TV</span>
-                                        </div>
-                                        <div class="product__cart-view">
-                                            <span>1,8 Tr lượt xem . </span>
-                                            <span>1 ngày trước</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product__cart">
-                                <div class="product__cart-image" style="background-image:url(https://i.ytimg.com/an_webp/UIHO6QXj0ms/mqdefault_6s.webp?du=3000&sqp=CNC0zYwG&rs=AOn4CLCrnu45rPepYn7Fey2FJ6W-WFksXQ);
-                                 background-repeat: no-repeat;
-                                background-size: cover;
-                                ">
-                                     <span>21:23</span>
-                                </div>
-                                <div class="product__cart-content">
-                                    <div class="product__cart-content-userImage">
-                                        <img src="https://yt3.ggpht.com/Bowu64_L_wQCKPCv-9Y_LWqSUd9sgzQ6nnsZa62LEhznDNk6lbkbEGgZPAL3FPi9EGj-qlPyGA=s68-c-k-c0x00ffffff-no-rj"
-                                         alt="">
-                                    </div>
-                                    <div class="product__cart-content-title">
-                                        <div class="product__cart-content-title-icon">
-                                            <h3>Install SASS để dùng SCSS?</h3>
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </div>                                                                                    
-                                        <div class="product__cart-blogName">
-                                            <span>
-                                                F8 Official</span>
-                                        </div>
-                                        <div class="product__cart-view">
-                                            <span>1,8 Tr lượt xem . </span>
-                                            <span>1 ngày trước</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product__cart">
-                                <div class="product__cart-image"
-                                style="background-image: url(https://i.ytimg.com/vi/LL0Aw0L15PA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuNW6SW0JFzRNptPCWWEJaH67iAQ);
-                                background-repeat: no-repeat;
-                                background-size: cover;"
-                                >
-                                     <span>06:23</span>
-                                </div>
-                                <div class="product__cart-content">
-                                    <div class="product__cart-content-userImage">
-                                        <img src="https://yt3.ggpht.com/7OUuKarGk0FS1S8MPveUoWthCnhrW6xCTcUooFrnjtb9oO1UwcI70XFNbio746uvpZaYsb5-r58=s68-c-k-c0x00ffffff-no-rj"
-                                         alt="">
-                                    </div>
-                                    <div class="product__cart-content-title">
-                                        <div class="product__cart-content-title-icon">
-                                            <h3>VÀI LẦN ĐÓN ĐƯA | KHỞI MY x TRUNG QUÂN l Live Performance</h3>
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </div>                                                                                    
-                                        <div class="product__cart-blogName">
-                                            <span>MER OFFICIAL</span>
-                                        </div>
-                                        <div class="product__cart-view">
-                                            <span>2,8 Tr lượt xem . </span>
-                                            <span>1 tuần trước</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product__cart">
-                                <div class="product__cart-image"
-                                style="background-image: url(https://i.ytimg.com/vi/bI_lUzFQakY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_6_LD2ZuDQJj9sxv4RkiRE4wPlw);
-                                background-repeat: no-repeat;
-                                background-size: cover;"
-                                >
-                                
-                                     <span>05:23</span>
-                                </div>
-                                <div class="product__cart-content">
-                                    <div class="product__cart-content-userImage">
-                                        <img src="https://yt3.ggpht.com/VfTTnTOCtAvBM08uomTQNeZ1B4uL4D7NEdBTd28RjtDyTPFxoz6Va9XxCGgEkH_XVcGgRkaXmA=s88-c-k-c0x00ffffff-no-rj"
-                                         alt="">
-                                    </div>
-                                    <div class="product__cart-content-title">
-                                        <div class="product__cart-content-title-icon">
-                                            <h3>KAY TRẦN | INTRO KAY TRẦN FROM M-TP - NẮM ĐÔI BÀN TAY | LAZADA SUPERSHOW 11.11</h3>
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </div>                                                                                    
-                                        <div class="product__cart-blogName">
-                                            <span>Kay Tran Official</span>
-                                        </div>
-                                        <div class="product__cart-view">
-                                            <span>1,8 Tr lượt xem . </span>
-                                            <span>5 ngày trước</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="head__logo-icon">
+              <a href="#">
+                <i class="fab fa-youtube"></i>
+                <span class="head__logo-text">YouTube</span>
+                <span class="head__logo-text-vn">VN</span>
+              </a>
             </div>
-        </body>
+          </div>
+          <div class="head__search">
+            <div class="head__search-input">
+              <input type="text" name="head-search" placeholder="Tìm Kiếm" />
+              <i class="fas fa-keyboard"></i>
+            </div>
+            <div class="head__search-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="head__search-micro">
+              <i class="fas fa-microphone"></i>
+            </div>
+          </div>
+          <div class="head__user">
+            <div class="head__user-video">
+              <i class="fas fa-video"></i>
+            </div>
+            <div class="head__user-app">
+              <i class="far fa-bookmark"></i>
+            </div>
+            <div class="head__user-info">
+              <i class="far fa-bell"></i>
+            </div>
+            <div class="head__user-account">
+              <i class="far fa-smile"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="body__container">
+          <div class="body_sidebar">
+            <div class="body__category">
+              <div class="category__container">
+                <div class="category__homePage">
+                  <ul class="category__list">
+                    <li class="category__list-item active">
+                      <i class="fas fa-home"></i>
+                      <span>Trang chu</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="far fa-compass"></i>
+                      <span>Kham Pha</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="fas fa-book-open"></i>
+                      <span>Kenh Dang Ki</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="category__video">
+                  <ul class="category__list">
+                    <li class="category__list-item">
+                      <i class="fas fa-book"></i>
+                      <span>Thu vien</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="fas fa-history"></i>
+                      <span>Video đã xem</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="far fa-clock"></i>
+                      <span>Xem sau</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="far fa-thumbs-up"></i>
+                      <span>video đã thích</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="category__video">
+                  <ul class="category__list">
+                    <li class="category__list-item">
+                      <i class="fas fa-book"></i>
+                      <span>Thu vien</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="fas fa-history"></i>
+                      <span>Video đã xem</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="far fa-clock"></i>
+                      <span>Xem sau</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="far fa-thumbs-up"></i>
+                      <span>video đã thích</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="category__video">
+                  <ul class="category__list">
+                    <li class="category__list-item">
+                      <i class="fas fa-book"></i>
+                      <span>Thu vien</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="fas fa-history"></i>
+                      <span>Video đã xem</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="far fa-clock"></i>
+                      <span>Xem sau</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="far fa-thumbs-up"></i>
+                      <span>video đã thích</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="category__video">
+                  <ul class="category__list">
+                    <li class="category__list-item">
+                      <i class="fas fa-book"></i>
+                      <span>Thu vien</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="fas fa-history"></i>
+                      <span>Video đã xem</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="far fa-clock"></i>
+                      <span>Xem sau</span>
+                    </li>
+                    <li class="category__list-item">
+                      <i class="far fa-thumbs-up"></i>
+                      <span>video đã thích</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="body__product">
+            <div class="body__product-container">
+              <div class="product__hint">
+                <ul class="product__hint-list">
+                  <li class="product__hint-list-item active">Tất cả</li>
+                  <li class="product__hint-list-item">danh sách kết hợp</li>
+                  <li class="product__hint-list-item">Âm nhạc</li>
+                  <li class="product__hint-list-item">Giải trí</li>
+                  <li class="product__hint-list-item">Trò chơi</li>
+                </ul>
+              </div>
+
+              <div class="product__list">
+                <div class="product__cart">
+                  <div
+                    class="product__cart-image"
+                    style="
+                      background-image: url(https://i.ytimg.com/vi/-61ZCCCwDU4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDX2FTb2hY341IgBUISTiqI1yS89g);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                    "
+                  >
+                    <span>03:23</span>
+                  </div>
+                  <div class="product__cart-content">
+                    <div class="product__cart-content-userImage">
+                      <img
+                        src="https://yt3.ggpht.com/ytc/AKedOLSOyvcUtaZ8Nh5VpfzmzBOXpXjx80P4ZkfFemICFQ=s68-c-k-c0x00ffffff-no-rj"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__cart-content-title">
+                      <div class="product__cart-content-title-icon">
+                        <h3>THIÊN ĐÀNG | SOÁI NHI ft. GIN (Cover)</h3>
+                        <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                      <div class="product__cart-blogName">
+                        <span>Soái Nhi Official </span>
+                      </div>
+                      <div class="product__cart-view">
+                        <span>1,8 Tr lượt xem . </span>
+                        <span>1 ngày trước</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__cart">
+                  <div
+                    class="product__cart-image"
+                    style="
+                      background-image: url(https://i.ytimg.com/vi/c-mILo5qZjc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAYaq8UV1vZHg5Fhv3Q3gGqsQhHvQ);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                    "
+                  >
+                    <span>21:23</span>
+                  </div>
+                  <div class="product__cart-content">
+                    <div class="product__cart-content-userImage">
+                      <img
+                        src="https://yt3.ggpht.com/XkcR_0_hNSF1QSORprbltUR23RyOSfnCUBYo0BEUwvAZrV2UVuY3ltSa5BukufP4oQEQ5cKN=s88-c-k-c0x00ffffff-no-rj"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__cart-content-title">
+                      <div class="product__cart-content-title-icon">
+                        <h3>SpaceSpeakers' Chill Hits | SpaceSpeakers</h3>
+                        <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                      <div class="product__cart-blogName">
+                        <span>SpaceSpeakers TV</span>
+                      </div>
+                      <div class="product__cart-view">
+                        <span>1,8 Tr lượt xem . </span>
+                        <span>1 ngày trước</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__cart">
+                  <div
+                    class="product__cart-image"
+                    style="
+                      background-image: url(https://i.ytimg.com/an_webp/UIHO6QXj0ms/mqdefault_6s.webp?du=3000&sqp=CNC0zYwG&rs=AOn4CLCrnu45rPepYn7Fey2FJ6W-WFksXQ);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                    "
+                  >
+                    <span>21:23</span>
+                  </div>
+                  <div class="product__cart-content">
+                    <div class="product__cart-content-userImage">
+                      <img
+                        src="https://yt3.ggpht.com/Bowu64_L_wQCKPCv-9Y_LWqSUd9sgzQ6nnsZa62LEhznDNk6lbkbEGgZPAL3FPi9EGj-qlPyGA=s68-c-k-c0x00ffffff-no-rj"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__cart-content-title">
+                      <div class="product__cart-content-title-icon">
+                        <h3>Install SASS để dùng SCSS?</h3>
+                        <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                      <div class="product__cart-blogName">
+                        <span> F8 Official</span>
+                      </div>
+                      <div class="product__cart-view">
+                        <span>1,8 Tr lượt xem . </span>
+                        <span>1 ngày trước</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__cart">
+                  <div
+                    class="product__cart-image"
+                    style="
+                      background-image: url(https://i.ytimg.com/vi/LL0Aw0L15PA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuNW6SW0JFzRNptPCWWEJaH67iAQ);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                    "
+                  >
+                    <span>06:23</span>
+                  </div>
+                  <div class="product__cart-content">
+                    <div class="product__cart-content-userImage">
+                      <img
+                        src="https://yt3.ggpht.com/7OUuKarGk0FS1S8MPveUoWthCnhrW6xCTcUooFrnjtb9oO1UwcI70XFNbio746uvpZaYsb5-r58=s68-c-k-c0x00ffffff-no-rj"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__cart-content-title">
+                      <div class="product__cart-content-title-icon">
+                        <h3>
+                          VÀI LẦN ĐÓN ĐƯA | KHỞI MY x TRUNG QUÂN l Live
+                          Performance
+                        </h3>
+                        <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                      <div class="product__cart-blogName">
+                        <span>MER OFFICIAL</span>
+                      </div>
+                      <div class="product__cart-view">
+                        <span>2,8 Tr lượt xem . </span>
+                        <span>1 tuần trước</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__cart">
+                  <div
+                    class="product__cart-image"
+                    style="
+                      background-image: url(https://i.ytimg.com/vi/bI_lUzFQakY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_6_LD2ZuDQJj9sxv4RkiRE4wPlw);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                    "
+                  >
+                    <span>05:23</span>
+                  </div>
+                  <div class="product__cart-content">
+                    <div class="product__cart-content-userImage">
+                      <img
+                        src="https://yt3.ggpht.com/VfTTnTOCtAvBM08uomTQNeZ1B4uL4D7NEdBTd28RjtDyTPFxoz6Va9XxCGgEkH_XVcGgRkaXmA=s88-c-k-c0x00ffffff-no-rj"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__cart-content-title">
+                      <div class="product__cart-content-title-icon">
+                        <h3>
+                          KAY TRẦN | INTRO KAY TRẦN FROM M-TP - NẮM ĐÔI BÀN TAY
+                          | LAZADA SUPERSHOW 11.11
+                        </h3>
+                        <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                      <div class="product__cart-blogName">
+                        <span>Kay Tran Official</span>
+                      </div>
+                      <div class="product__cart-view">
+                        <span>1,8 Tr lượt xem . </span>
+                        <span>5 ngày trước</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__cart">
+                  <div
+                    class="product__cart-image"
+                    style="
+                      background-image: url(https://i.ytimg.com/vi/bI_lUzFQakY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_6_LD2ZuDQJj9sxv4RkiRE4wPlw);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                    "
+                  >
+                    <span>05:23</span>
+                  </div>
+                  <div class="product__cart-content">
+                    <div class="product__cart-content-userImage">
+                      <img
+                        src="https://yt3.ggpht.com/VfTTnTOCtAvBM08uomTQNeZ1B4uL4D7NEdBTd28RjtDyTPFxoz6Va9XxCGgEkH_XVcGgRkaXmA=s88-c-k-c0x00ffffff-no-rj"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__cart-content-title">
+                      <div class="product__cart-content-title-icon">
+                        <h3>
+                          KAY TRẦN | INTRO KAY TRẦN FROM M-TP - NẮM ĐÔI BÀN TAY
+                          | LAZADA SUPERSHOW 11.11
+                        </h3>
+                        <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                      <div class="product__cart-blogName">
+                        <span>Kay Tran Official</span>
+                      </div>
+                      <div class="product__cart-view">
+                        <span>1,8 Tr lượt xem . </span>
+                        <span>5 ngày trước</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__cart">
+                  <div
+                    class="product__cart-image"
+                    style="
+                      background-image: url(https://i.ytimg.com/vi/bI_lUzFQakY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_6_LD2ZuDQJj9sxv4RkiRE4wPlw);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                    "
+                  >
+                    <span>05:23</span>
+                  </div>
+                  <div class="product__cart-content">
+                    <div class="product__cart-content-userImage">
+                      <img
+                        src="https://yt3.ggpht.com/VfTTnTOCtAvBM08uomTQNeZ1B4uL4D7NEdBTd28RjtDyTPFxoz6Va9XxCGgEkH_XVcGgRkaXmA=s88-c-k-c0x00ffffff-no-rj"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__cart-content-title">
+                      <div class="product__cart-content-title-icon">
+                        <h3>
+                          KAY TRẦN | INTRO KAY TRẦN FROM M-TP - NẮM ĐÔI BÀN TAY
+                          | LAZADA SUPERSHOW 11.11
+                        </h3>
+                        <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                      <div class="product__cart-blogName">
+                        <span>Kay Tran Official</span>
+                      </div>
+                      <div class="product__cart-view">
+                        <span>1,8 Tr lượt xem . </span>
+                        <span>5 ngày trước</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__cart">
+                  <div
+                    class="product__cart-image"
+                    style="
+                      background-image: url(https://i.ytimg.com/vi/bI_lUzFQakY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_6_LD2ZuDQJj9sxv4RkiRE4wPlw);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                    "
+                  >
+                    <span>05:23</span>
+                  </div>
+                  <div class="product__cart-content">
+                    <div class="product__cart-content-userImage">
+                      <img
+                        src="https://yt3.ggpht.com/VfTTnTOCtAvBM08uomTQNeZ1B4uL4D7NEdBTd28RjtDyTPFxoz6Va9XxCGgEkH_XVcGgRkaXmA=s88-c-k-c0x00ffffff-no-rj"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__cart-content-title">
+                      <div class="product__cart-content-title-icon">
+                        <h3>
+                          KAY TRẦN | INTRO KAY TRẦN FROM M-TP - NẮM ĐÔI BÀN TAY
+                          | LAZADA SUPERSHOW 11.11
+                        </h3>
+                        <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                      <div class="product__cart-blogName">
+                        <span>Kay Tran Official</span>
+                      </div>
+                      <div class="product__cart-view">
+                        <span>1,8 Tr lượt xem . </span>
+                        <span>5 ngày trước</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__cart">
+                  <div
+                    class="product__cart-image"
+                    style="
+                      background-image: url(https://i.ytimg.com/vi/bI_lUzFQakY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_6_LD2ZuDQJj9sxv4RkiRE4wPlw);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                    "
+                  >
+                    <span>05:23</span>
+                  </div>
+                  <div class="product__cart-content">
+                    <div class="product__cart-content-userImage">
+                      <img
+                        src="https://yt3.ggpht.com/VfTTnTOCtAvBM08uomTQNeZ1B4uL4D7NEdBTd28RjtDyTPFxoz6Va9XxCGgEkH_XVcGgRkaXmA=s88-c-k-c0x00ffffff-no-rj"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__cart-content-title">
+                      <div class="product__cart-content-title-icon">
+                        <h3>
+                          KAY TRẦN | INTRO KAY TRẦN FROM M-TP - NẮM ĐÔI BÀN TAY
+                          | LAZADA SUPERSHOW 11.11
+                        </h3>
+                        <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                      <div class="product__cart-blogName">
+                        <span>Kay Tran Official</span>
+                      </div>
+                      <div class="product__cart-view">
+                        <span>1,8 Tr lượt xem . </span>
+                        <span>5 ngày trước</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-</body>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
