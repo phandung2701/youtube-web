@@ -3,13 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-#body {
-  width: 1500px;
-  margin: 0 auto;
+body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   position: relative;
-  overflow-x: hidden;
 }
 .head__container {
   display: flex;
@@ -89,7 +86,7 @@
 .head__search {
   /* max-width: 50%;
   flex: 0 0 50%; */
-  width: 700px;
+  width: 680px;
   display: flex;
   justify-content: center;
   align-items: center;
