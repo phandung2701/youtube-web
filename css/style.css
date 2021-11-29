@@ -17,15 +17,15 @@
   --backgroundActive: #373737;
   --textTitle: #868686;
   --textColor: #fff1dd;
-  --bg-header: rgba(0, 0, 0, 0.9);
+  --bg-header: rgba(20, 20, 20, 0.98);
   --borderColor: #343434;
   --scroll-color: #030303;
-  --scroll-bg-color: #343434;
+  --scroll-bg-color: #757575;
   --border-input: #343434;
 }
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: var(--scroll-color);
+  /* background-color: var(--scroll-color); */
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
@@ -35,18 +35,21 @@
 /* header */
 body {
   background-color: var(--backgroudPrimary);
+  height: calc(100%+200px);
+}
+header {
+  background-color: var(--bg-header);
+  width: 100%;
 }
 .head__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 0 16px;
+  padding: 0 12px;
   height: 56px;
   position: fixed;
   width: 100%;
-  margin-left: -4px;
-  margin-right: -4px;
   z-index: 2;
   background-color: var(--bg-header);
 }
@@ -70,7 +73,7 @@ body {
   background-color: var(--backgroundActive);
 }
 .head__logo-bar i {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 550;
   color: var(--textColor);
   display: block;
@@ -92,13 +95,13 @@ body {
   display: flex;
   align-items: center;
 }
-.head__logo-icon i {
-  font-size: 1.6rem;
-  color: #ff0000;
+.head__logo-icon img {
+  width: 24px;
+  height: 24px;
   margin-right: 2px;
 }
 .head__logo-text {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: -2px;
@@ -212,6 +215,15 @@ body {
   transform: translate(-50%, -50%);
   color: var(--textColor);
 }
+.head__user-video.active .icon-sun {
+  display: block;
+}
+.head__user-video.active .icon-moon {
+  display: none;
+}
+.head__user-video .icon-sun {
+  display: none;
+}
 .head__user-account {
   position: relative;
   width: 60px;
@@ -248,27 +260,28 @@ main.active .body__container {
 .body__container {
   position: relative;
   width: 100%;
-  padding-left: 25px;
   background-color: var(--backgroudPrimary);
 }
 .body_sidebar {
-  padding: 12px 10px 12px 0;
-  position: relative;
-  height: 100%;
-  width: 244px;
+  width: 289px;
+  padding-right: 19px;
   background-color: var(--bg-header);
-  /* display: none; */
-  z-index: 1;
 }
 /* sidebar 2 */
 .body__sidebar2 {
-  position: relative;
+  position: static;
   height: 100%;
-  width: 70px;
-  padding-top: 12px;
+  width: 71px;
+  padding-top: 5px;
   display: none;
-  background-color: var(--bg-header);
   z-index: 1;
+}
+.category__list2 {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  z-index: 2;
+  background-color: var(--bg-header);
 }
 .category__list-item2 .category__list-item2-content {
   font-size: 0.7rem;
@@ -294,10 +307,13 @@ main.active .body__container {
 .body__category {
   position: fixed;
   width: 230px;
-  height: 90%;
+  height: 95%;
   overflow-y: hidden;
-  padding-right: 4px;
+  margin-top: 6px;
+  padding-right: 5px;
   z-index: 2;
+  background-color: var(--bg-header);
+  padding-bottom: 20px;
 }
 .body__category:hover {
   overflow-y: scroll;
@@ -383,12 +399,8 @@ main.active .body__container {
   padding-top: 12px;
   border-top: 1px solid var(--borderColor);
 }
-.category__video.active {
-  display: none;
-}
 .body__product-container {
-  padding-top: 5px;
-  padding-left: 10px;
+  padding-top: 3px;
   position: static;
   width: 100%;
   background-color: var(--backgroudPrimary);
@@ -401,12 +413,13 @@ main.active .body__container {
   position: fixed;
   z-index: 2;
   background-color: var(--bg-header);
-  padding-left: 10px;
+  width: 100%;
 }
 .product__hint-list {
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin-left: 30px;
 }
 .product__hint-list-item {
   list-style: none;
@@ -422,17 +435,18 @@ main.active .body__container {
 .product__hint-list-item.active {
   background-color: var(--textColor);
   color: var(--backgroudPrimary);
+  font-weight: 900;
 }
 
 .product__list {
   position: relative;
-  top: 65px;
-  width: 98%;
+  top: 75px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 20px;
   object-fit: cover;
-  padding: 0 15px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 .product__list-item {
@@ -516,3 +530,97 @@ footer p {
 }
 
 /* end main */
+/* responsive */
+/* ipad pro */
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  .head__user-video i,
+  .head__user-app i,
+  .head__user-info i {
+    margin: 0 5px;
+  }
+  .body_sidebar {
+    display: none;
+  }
+  .body__sidebar2 {
+    display: block;
+  }
+  .head__search {
+    width: 600px;
+  }
+  main.active .body_sidebar {
+    display: none;
+  }
+  main.active .body__sidebar2 {
+    display: block;
+  }
+  main.active .body__container {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 800px) {
+  .head__container {
+    justify-content: space-around;
+  }
+  .head__user-video i,
+  .head__user-app i,
+  .head__user-info i {
+    font-size: 1.1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* head__search */
+  .head__search {
+    width: 400px;
+  }
+  .body_sidebar {
+    display: none;
+  }
+  .body__sidebar2 {
+    display: block;
+  }
+  main.active .body_sidebar {
+    display: none;
+  }
+  main.active .body__sidebar2 {
+    display: block;
+  }
+  main.active .body__container {
+    padding: 0;
+  }
+}
+/* mobile */
+@media screen and (max-width: 799px) {
+  .head__search-input {
+    display: none;
+  }
+  .head__search-icon,
+  .head__search-micro {
+    border: none;
+    background-color: var(--bg-header);
+    width: 40px;
+  }
+  .head__search-icon:hover {
+    background-color: var(--bg-header);
+  }
+  .head__search {
+    width: 150px;
+  }
+  .body_sidebar {
+    display: none;
+  }
+  .body__sidebar2 {
+    display: none;
+  }
+  main.active .body_sidebar {
+    display: none;
+  }
+  main.active .body__sidebar2 {
+    display: none;
+  }
+  main.active .body__container {
+    padding: 0;
+  }
+}

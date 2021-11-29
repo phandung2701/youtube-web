@@ -10,7 +10,6 @@ hint.forEach((x) => {
 const main = document.querySelector("main");
 const sidebar = document.querySelector(".head__logo-bar");
 sidebar.addEventListener("click", () => {
-  console.log("ok");
   main.classList.toggle("active");
 });
 
@@ -29,6 +28,6 @@ window.onload = function () {
       root.setAttribute("data-theme", "light");
     }
     // thay đổi vị trí của button
-    // this.classList.toggle('active');
+    this.classList.toggle("active");
   });
 };
