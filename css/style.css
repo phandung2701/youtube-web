@@ -247,6 +247,7 @@ main {
   top: 51px;
   position: relative;
   background-color: var(--backgroudPrimary);
+  height: auto;
 }
 main.active .body_sidebar {
   display: none;
@@ -261,6 +262,7 @@ main.active .body__container {
   position: relative;
   width: 100%;
   background-color: var(--backgroudPrimary);
+  height: initial;
 }
 .body_sidebar {
   width: 289px;
@@ -309,7 +311,7 @@ main.active .body__container {
   width: 230px;
   height: 95%;
   overflow-y: hidden;
-  margin-top: 6px;
+  margin-top: 14px;
   padding-right: 5px;
   z-index: 2;
   background-color: var(--bg-header);
@@ -399,21 +401,25 @@ main.active .body__container {
   padding-top: 12px;
   border-top: 1px solid var(--borderColor);
 }
+
 .body__product-container {
   padding-top: 3px;
   position: static;
   width: 100%;
   background-color: var(--backgroudPrimary);
 }
-.product__hint {
+.product__hint-container {
   height: 56px;
+  position: static;
+  margin-bottom: 20px;
+}
+.product__hint {
   border-top: 1px solid var(--borderColor);
   border-bottom: 1px solid var(--borderColor);
   width: 100%;
   position: fixed;
   z-index: 2;
   background-color: var(--bg-header);
-  width: 100%;
 }
 .product__hint-list {
   display: flex;
@@ -431,6 +437,7 @@ main.active .body__container {
   outline: none;
   background-color: var(--backgroundActive);
   cursor: pointer;
+  white-space: nowrap;
 }
 .product__hint-list-item.active {
   background-color: var(--textColor);
@@ -439,8 +446,6 @@ main.active .body__container {
 }
 
 .product__list {
-  position: relative;
-  top: 75px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -448,6 +453,7 @@ main.active .body__container {
   object-fit: cover;
   padding: 0 20px;
   box-sizing: border-box;
+  margin-top: 20px;
 }
 .product__list-item {
   display: flex;
@@ -559,9 +565,6 @@ footer p {
 }
 
 @media screen and (max-width: 1023px) and (min-width: 800px) {
-  .head__container {
-    justify-content: space-around;
-  }
   .head__user-video i,
   .head__user-app i,
   .head__user-info i {
@@ -606,7 +609,8 @@ footer p {
     background-color: var(--bg-header);
   }
   .head__search {
-    width: 150px;
+    width: 300px;
+    justify-content: right;
   }
   .body_sidebar {
     display: none;
